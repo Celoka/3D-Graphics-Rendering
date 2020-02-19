@@ -19,10 +19,13 @@ source venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
-- 
-To deactivate the virtualenv:
+- To deactivate the virtualenv:
 ```
 deactivate
+```
+- Run the script:
+```
+python graphics.py
 ```
 ### Improvements
 - I observed that certain parts of the code could as well be modularized.
