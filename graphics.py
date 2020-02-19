@@ -1,7 +1,8 @@
-import os, sys
+import os
 import pygame
 import builtins
 
+# local imports
 from cam import Cam
 from cube import Cube
 from helper import pacman_points, rotate2d
@@ -72,7 +73,11 @@ while run:
             on_screen = False
             for i in face:
                 x,y = screen_coords[i]
-                if vert_list[i][2]>0 and x>0 and x<w and y>0 and y<h:
+                if vert_list[i][2]>0 \
+                    and x>0 \
+                        and x<w \
+                            and y>0 \
+                                and y<h:
                     on_screen = True
                     break;
             if on_screen:
@@ -87,8 +92,6 @@ while run:
             pygame.draw.polygon(screen, face_color[i], face_list[i])
         except:
             pass
-
-
 
     pygame.display.flip()
     
